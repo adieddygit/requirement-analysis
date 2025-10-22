@@ -241,18 +241,27 @@ Acceptance Criteria play a crucial role in **Requirement Analysis** by defining 
    Clearly defined criteria help prevent uncontrolled changes by setting measurable limits for what is included in a requirement,  
    saving time and reducing rework.
 
-   ### ✅ Example: Acceptance Criteria for the **Checkout Feature**
+   ### Example of Acceptance Criteria — Checkout Feature
 
-**Feature Description:**  
-The Checkout feature allows users to complete the booking process by reviewing their selected property, confirming details, and making a secure payment.
+The Checkout feature allows users to complete the booking process by reviewing their selected property, confirming details, and making a secure payment. It can be in the various format examples.
 
-**Acceptance Criteria:**
+#### Acceptance Criteria (List Format)
 
-1. The user must be able to review booking details, including property name, check-in/check-out dates, total price, and number of guests before confirming payment.
-2. The system must provide at least one secure payment option (e.g., credit/debit card, PayPal, or digital wallet).
-3. Upon successful payment, a confirmation page must be displayed with booking reference details and payment summary.
-4. The system must send a booking confirmation email or SMS to the user within 1 minute of payment completion.
-5. If the payment fails, the system must display an appropriate error message and allow the user to retry or choose another payment method.
-6. The booking record must be stored in the database and reflected under the user’s booking history.
-7. The system must prevent multiple charges for the same booking transaction.
-8. The entire checkout process must be completed within 5 seconds under normal network conditions.
+- The system must display a summary of the booking details (property name, dates, total cost, and taxes).
+- Users should be able to choose a preferred payment method (credit/debit card, PayPal, etc.).
+- The system must validate payment details before processing.
+- Upon successful payment, the booking status should update to “Confirmed.”
+- A confirmation email and receipt must be sent automatically to the user.
+- If the payment fails, the user should see an error message and be prompted to retry or choose another method.
+- All payment transactions must be securely encrypted.
+
+#### Acceptance Criteria (Table Format)
+
+| **ID** | **Criteria**                                          | **Expected Result**                                                       |
+| :----: | :---------------------------------------------------- | :------------------------------------------------------------------------ |
+| AC-01  | Booking summary is displayed before payment           | User reviews details before confirming                                    |
+| AC-02  | User selects a valid payment method                   | System accepts input and proceeds to validation                           |
+| AC-03  | Payment details are valid and processed               | System completes transaction and confirms booking                         |
+| AC-04  | Payment fails due to invalid details or network error | System displays error and allows user to retry                            |
+| AC-05  | Successful payment                                    | System updates booking status to “Confirmed” and sends confirmation email |
+| AC-06  | All payment data handled                              | System encrypts sensitive information to ensure security                  |
