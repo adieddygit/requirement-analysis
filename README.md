@@ -199,3 +199,60 @@ It shows how various actors/users interact with the system to perform different 
 ## Below is the Diagram
 
 ## ![Use Case Diagram](alx-booking-uc.png.png)
+
+---
+
+## Acceptance Criteria
+
+**Acceptance Criteria** are clearly defined conditions that determine whether a software feature or functionality has been successfully implemented.  
+They outline the **expected behavior** of a feature and serve as a **benchmark for completion and approval** by stakeholders.
+
+In essence, acceptance criteria translate **business requirements** into **measurable outcomes**, ensuring that the developed feature truly meets user needs and aligns with project objectives.
+
+They act as a **shared understanding** between developers, testers, and stakeholders—guiding implementation, driving test cases, and confirming that the final product performs as intended before release.
+
+### Importance of Acceptance Criteria in Requirement Analysis
+
+Acceptance Criteria play a crucial role in **Requirement Analysis** by defining the exact conditions under which a requirement or feature is considered complete and satisfactory. They serve as a bridge between stakeholders and developers, ensuring mutual understanding of expectations and quality standards before implementation begins.
+
+#### Key Importance:
+
+1. **Clarity and Shared Understanding**  
+   Acceptance Criteria provide a clear, measurable definition of what success looks like for each requirement.  
+   This eliminates ambiguity and ensures that stakeholders, developers, and testers all interpret the requirement in the same way.
+
+2. **Guidance for Development and Testing**  
+   They act as a reference point during design, coding, and testing phases, helping developers build exactly what was requested  
+   and enabling testers to verify whether the system meets the specified conditions.
+
+3. **Improved Quality and Validation**  
+   By clearly stating what “done” means, Acceptance Criteria ensure that all delivered features meet quality expectations  
+   and functional goals before they are approved.
+
+4. **Facilitates Communication and Collaboration**  
+   They promote collaboration between business analysts, developers, and stakeholders, encouraging discussion about user needs,  
+   priorities, and success measures early in the process.
+
+5. **Supports Traceability and Compliance**  
+   Acceptance Criteria make it easier to trace each requirement from conception to testing and validation,  
+   ensuring full coverage and accountability throughout the Software Development Life Cycle (SDLC).
+
+6. **Prevents Scope Creep and Rework**  
+   Clearly defined criteria help prevent uncontrolled changes by setting measurable limits for what is included in a requirement,  
+   saving time and reducing rework.
+
+   ### ✅ Example: Acceptance Criteria for the **Checkout Feature**
+
+**Feature Description:**  
+The Checkout feature allows users to complete the booking process by reviewing their selected property, confirming details, and making a secure payment.
+
+**Acceptance Criteria:**
+
+1. The user must be able to review booking details, including property name, check-in/check-out dates, total price, and number of guests before confirming payment.
+2. The system must provide at least one secure payment option (e.g., credit/debit card, PayPal, or digital wallet).
+3. Upon successful payment, a confirmation page must be displayed with booking reference details and payment summary.
+4. The system must send a booking confirmation email or SMS to the user within 1 minute of payment completion.
+5. If the payment fails, the system must display an appropriate error message and allow the user to retry or choose another payment method.
+6. The booking record must be stored in the database and reflected under the user’s booking history.
+7. The system must prevent multiple charges for the same booking transaction.
+8. The entire checkout process must be completed within 5 seconds under normal network conditions.
